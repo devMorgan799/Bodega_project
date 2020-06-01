@@ -1,0 +1,16 @@
+@mixin gridSearchOutput{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+
+}
+
+//Colors
+$border_color: red;
+$font_color: green;
+
+//Font
+$aladin:'aladin', cursive;
+$bad_script: 'Bad Script', cursive;
+$pt_serif: 'PT Serif', serif;
+    

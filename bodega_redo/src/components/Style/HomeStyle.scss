@@ -1,0 +1,24 @@
+@import "ReusableStyles";
+
+#main-div-home-style{
+// @ mixin
+background-image:url("../../asset_bodega/bodega_outside.jpeg");
+height: 300px;
+width:500px;
+border: solid 2px blue;
+}
+
+#h1-home-style{
+
+}
+
+#h2-home-style{
+    font-family: $aladin;
+    border:solid 2px $border_color
+
+}
+
+#p-home-style{
+    border: solid 2px $border_color;
+
+}
