@@ -5,7 +5,7 @@
 
 
 
-// class InventoryBeverageListPage extends Component {
+// class InventoryCandyListPage extends Component {
 
 //   constructor(props) {
 //     super(props);
@@ -18,7 +18,7 @@
 
 //     fetch('/bodega/v1/candy')
 //       .then(response => response.json())
-//       .then(data => this.setState({beverage: data, isLoading: false}));
+//       .then(data => this.setState({candy: data, isLoading: false}));
 //   }
 
 //   async remove(id) {
@@ -29,27 +29,27 @@
 //         'Content-Type': 'application/json'
 //       }
 //     }).then(() => {
-//       let updatedBeverage = [...this.state.beverage].filter(i => i.id !== id);
-//       this.setState({beverage: updatedBeverage});
+//       let updatedCandy = [...this.state.candy].filter(i => i.id !== id);
+//       this.setState({candy: updatedCandy});
 //     });
 //   }
 
 //   render() {
-//     const {beverage, isLoading} = this.state;
+//     const {candy, isLoading} = this.state;
 
 //     if (isLoading) {
 //       return <p>Loading...</p>;
 //     }
 
-//     const candyList = beverage.map(beverage => {
-//       return <tr key={beverage.id}>
+//     const candyList = candy.map(candy => {
+//       return <tr key={candy.id}>
 //         <td style={{whiteSpace: 'nowrap'}}>{candy.candyName}</td>
-//         <td>{beverage.beverageName}</td>
+//         <td>{candy.candyName}</td>
 
 //         <td>
 //           <ButtonGroup>
-//             <Button size="sm" color="primary" tag={Link} to={"/beverage/" + beverage.id}>Edit</Button>
-//             <Button size="sm" color="danger" onClick={() => this.remove(beverage.id)}>Delete</Button>
+//             <Button size="sm" color="primary" tag={Link} to={"/candy/" + candy.id}>Edit</Button>
+//             <Button size="sm" color="danger" onClick={() => this.remove(candy.id)}>Delete</Button>
 //           </ButtonGroup>
 //         </td>
 //       </tr>
@@ -60,20 +60,20 @@
 //         <AppNavbar/>
 //         <Container fluid>
 //           <div className="float-right">
-//             <Button color="success" tag={Link} to="/beverage/new">Add Group</Button>
+//             <Button color="success" tag={Link} to="/candy/new">Add Group</Button>
 //           </div>
-//           <h3>My Beverage List</h3>
+//           <h3>My Candy List</h3>
 //           <Table className="mt-4">
 //             <thead>
 //             <tr>
-//               <th width="20%">Beverage Name</th>
-//               <th width="20%">Beverage Price</th>
+//               <th width="20%">Candy Name</th>
+//               <th width="20%">Candy Price</th>
 //               <th>Email</th>
 //               <th width="10%">Actions</th>
 //             </tr>
 //             </thead>
 //             <tbody>
-//             {InventoryBeverageListPage}
+//             {InventoryCandyListPage}
 //             </tbody>
 //           </Table>
 //         </Container>
@@ -82,4 +82,4 @@
 //   }
 // }
 
-export default InventoryBeverageListPage;
+// export default InventoryCandyListPage;

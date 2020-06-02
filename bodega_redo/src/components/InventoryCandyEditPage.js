@@ -3,7 +3,8 @@
 // import React, { Component } from 'react';
 // import { Link, withRouter } from 'react-router-dom';
 // import { Button, Container, Form, FormGroup, Input, Label } from 'reactstrap';
-// import AppNavbar from './AppNavBar';
+// import AppNavbar from './AppNavBar';import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+
 
 // class InventoryCandyEditPage extends Component {
 
@@ -89,4 +90,4 @@
 //    }
 //  }
  
-//  export default withRouter(InventoryCandyEditPage);
+//  export default InventoryCandyEditPage;

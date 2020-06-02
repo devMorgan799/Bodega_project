@@ -1,7 +1,11 @@
 import React from "react";
 import axios from "axios";
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 
-class NutritionSearch extends React.Component {
+
+
+
+class NutritionPage extends React.Component {
 
 constructor(props){
    super(props);
@@ -55,5 +59,5 @@ render(){
 }
 }
 
-export default NutritionSearch;
+export default NutritionPage;
 

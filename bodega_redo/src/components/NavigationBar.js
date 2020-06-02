@@ -19,12 +19,12 @@ export default class NavigationBar extends Component {
     return (
     <Navbar color="dark" dark expand="md">
       <NavbarBrand href="/">BodegaHome</NavbarBrand>
-      <NavbarBrand href="/">Candy</NavbarBrand>
-      <NavbarBrand href="/">Snacks</NavbarBrand>
-      <NavbarBrand href="/">Cleaning Supplies</NavbarBrand>
-      <NavbarBrand href="/">Deli</NavbarBrand>
-      <NavbarBrand href="/">Nutrition Info</NavbarBrand>
-      <NavbarBrand href="/">ORDER NOW</NavbarBrand>
+      <NavbarBrand href="/candy">Candy</NavbarBrand>
+      <NavbarBrand href="/snack">Snacks</NavbarBrand>
+      <NavbarBrand href="/cleaningSupply">Cleaning Supplies</NavbarBrand>
+      <NavbarBrand href="/deli">Deli</NavbarBrand>
+      <NavbarBrand href="/nutrition">Nutrition Info</NavbarBrand>
+      <NavbarBrand href="/order">ORDER NOW</NavbarBrand>
 
     </Navbar>)
   }
