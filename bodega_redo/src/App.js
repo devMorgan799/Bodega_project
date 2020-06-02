@@ -7,6 +7,7 @@ import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import BeveragePage from "../src/components/BeveragePage"
 import CandyPage from "../src/components/CandyPage"
 import DeliPage  from "../src/components/DeliPage"
+import CleaningSupplyPage from "../src/components/CleaningSupplyPage"
 // import InventoryCandyEditPage  from "../src/components/InventoryCandyEditPage"
 // import InventoryCandyListPage from "../src/componentsInventoryCandyListPage"
 
@@ -25,7 +26,9 @@ function App() {
             <Route exact path="/candy" component={CandyPage}></Route>
             <Route exact path="/snack" component={SnackPage} ></Route>
             <Route exact path="/beverage" component={BeveragePage} ></Route>
-            <Route exact path="/deli "component={DeliPage} ></Route>
+            <Route exact path="/cleaningsupply" component={CleaningSupplyPage} ></Route>
+            <Route exact path="/beverage" component={BeveragePage} ></Route>
+            <Route exact path="/deli"component={DeliPage} ></Route>
             <Route exact path="/nutrition" component={NutritionPage} ></Route>
             <Route exact path="/order" component={OrderPage} ></Route>
             {/* <Route path="/inventoryCandyEdit" exact={true} component={InventoryCandyEditPage}></Route>

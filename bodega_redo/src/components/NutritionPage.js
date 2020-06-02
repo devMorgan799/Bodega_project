@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
-
+import "./Style/NutritionStyle.scss"
+import NavigationBar from "./NavigationBar"
 
 
 
@@ -33,29 +34,36 @@ async getNutrition(){
       console.log(error)
    }
 }
+NutritionTable(){ 
+   if(this.state.nutritionList===undefined){}
+   else{
+       let nutrition=this.state.nutritionList.foods.map(res=> {
+           return (
+               <div className="">
+                    <h2 className="">Name: {res.description}</h2> 
+                    <p className=""><span class="">Price: </span>${1}</p>
+                     </div>
+       )})
+       return nutrition;
+   }
+  
+}
+
 
 
 
 
 render(){
    return (
-      <div></div>
+      <div id="main-div-nutrition-style">
+      <NavigationBar/>
+      <div id="nutritiontable">
+          {this.NutritionTable()}
+      </div>
+      </div>
    )
   
-//    const {employees} = this.state;
-   
-//     if (isLoading) {
-//       return <p>Loading...</p>;
-//     }
 
-//     const 
-//       const nutritionList = nutritiondata.map(nutrition => {
-//       return (
-//       <tr key={nutriton.id}>
-//         <td style={{whiteSpace: 'nowrap'}}>{nutrition.description}</td>
-//         <td>{nutrition.nutrientName}</td>
-
-//    )
 }
 }
 

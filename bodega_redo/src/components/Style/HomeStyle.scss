@@ -4,22 +4,23 @@
 // @ mixin
 background-image:url("../../asset_bodega/bodega_outside.jpeg");
 
-height: 1500px;
-width:1500px;
-border: solid 2px blue;
+background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
 }
 
 // #h1-home-style{
 
 // }
 
-#h2-home-style{
-    font-family: $aladin;
-    border:solid 2px $border_color
+// #h2-home-style{
+//     font-family: $aladin;
+//     border:solid 2px $border_color
 
-}
+// }
 
-#p-home-style{
-    border: solid 2px $border_color;
+// #p-home-style{
+//     border: solid 2px $border_color;
 
-}
+// }
